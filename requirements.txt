@@ -1,0 +1,23 @@
+#python stuff
+
+passlib[bcrypt]
+pymongo
+python-dotenv
+
+#backend stuff
+
+fastapi
+uvicorn
+jinja2
+python-multipart
+
+#observability
+logfire
+logfire[fastapi]
+
+
+#ai stuff
+nest-asyncio
+pydantic-ai-slim[tavily]
+pydantic-ai
+groq
