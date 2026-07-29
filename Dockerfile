@@ -10,7 +10,7 @@ COPY requirements.txt .
 RUN pip install --no-chache-dir -r requirements.txt 
 
 #Copy Source cpde (Backend + Frontend natively)]
-COPY ..
+COPY . .
 
 #Environment Variables
 ENV PYTHONUNBUFFERED=1
