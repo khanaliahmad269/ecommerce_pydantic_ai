@@ -43,10 +43,10 @@ class StoreDeps(BaseModel):
 
 
 agent=Agent(
-    "groq:qwen/qwen3-32b",
+    "groq:qwen/qwen3.6-27b",
     deps_type=StoreDeps, #the way it will give an output
     system_prompt=(
-        "You are a friendly shopping assistant ClothStore- an pnline clothing store. "
+        "You are a friendly shopping assistant Super Helper- an pnline clothing store. "
         "The store has 3 categories: Men, Women and kids"
         "\n\n"
         "Rules:\n"

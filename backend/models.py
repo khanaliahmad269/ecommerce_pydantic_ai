@@ -21,7 +21,7 @@ class Product(BaseModel):
 class Order(BaseModel):
     """Order placement model"""
     user_email:str
-    product_email:str
+    product_name:str
     quantity: int
 
 

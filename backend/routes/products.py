@@ -17,7 +17,7 @@ async def add_product(
     description: str =Form(...),
     price: int =Form(...),
     category: str = Form(...),
-    size:str=Form("M","L"),
+    size:str=Form("M,L"),
     color:str=Form("Black"),
     image:UploadFile =File(...),
 ):
