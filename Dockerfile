@@ -1,25 +1,19 @@
 # Build the Application
-
 FROM python:3.11-slim
-WORKDIR /app 
-
-
-#install backend dependencies
-
+WORKDIR /app
+  
+# Install backend dependencies
 COPY requirements.txt .
-RUN pip install --no-chache-dir -r requirements.txt 
+RUN pip install --no-cache-dir -r requirements.txt
 
-#Copy Source cpde (Backend + Frontend natively)]
+# Copy source code (Backend + Frontend natively)
 COPY . .
 
-#Environment Variables
+# Environment variables
 ENV PYTHONUNBUFFERED=1
 
-
-#EXPOSE THE APPLICATION PORT
-
+# Expose the application port
 EXPOSE 8000
 
-#START THE APPLICATION
-
-CMD ["uvicorn","main:app","--host",'0.0.0.0',"--port","8000"]
+# Start the application
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
