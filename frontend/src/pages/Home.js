@@ -8,7 +8,7 @@ import { navigate } from '../router.js';
 // Price range options shown in the filter bar
 const PRICE_RANGES = [
   { label: 'All Prices', min: null, max: null },
-  { label: 'Under ₹500',  min: null, max: 500 },
+  { label: 'Under PKR500',  min: null, max: 500 },
   { label: '₹500–₹1000',  min: 500,  max: 1000 },
   { label: '₹1000–₹2000', min: 1000, max: 2000 },
   { label: '₹2000–₹5000', min: 2000, max: 5000 },
