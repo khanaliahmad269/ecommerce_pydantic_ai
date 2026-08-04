@@ -8,11 +8,11 @@ import { navigate } from '../router.js';
 // Price range options shown in the filter bar
 const PRICE_RANGES = [
   { label: 'All Prices', min: null, max: null },
-  { label: 'Under PKR500',  min: null, max: 500 },
-  { label: '₹500–₹1000',  min: 500,  max: 1000 },
-  { label: '₹1000–₹2000', min: 1000, max: 2000 },
-  { label: '₹2000–₹5000', min: 2000, max: 5000 },
-  { label: 'Above ₹5000', min: 5000, max: null },
+  { label: 'Under PKR 500',  min: null, max: 500 },
+  { label: 'PKR 500–PKR 1000',  min: 500,  max: 1000 },
+  { label: 'PKR 1000–PKR 2000', min: 1000, max: 2000 },
+  { label: 'PKR 2000–PKR 5000', min: 2000, max: 5000 },
+  { label: 'Above PKR 5000', min: 5000, max: null },
 ];
 
 export async function renderHome() {
@@ -52,7 +52,7 @@ export async function renderHome() {
                 <h3 class="product-name">${p.name}</h3>
                 <p class="product-desc">${p.description}</p>
                 <div class="product-footer">
-                  <span class="product-price">₹${p.price}</span>
+                  <span class="product-price">PKR${p.price}</span>
                   <span class="product-category">${p.category}</span>
                 </div>
                 <button class="add-to-cart-btn" data-id="${p.id}">Add to Cart</button>

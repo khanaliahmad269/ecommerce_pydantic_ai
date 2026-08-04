@@ -25,7 +25,7 @@ export async function renderProductDetail(id) {
         <div class="product-detail-info">
           <span class="product-detail-category">${product.category}</span>
           <h1>${product.name}</h1>
-          <p class="product-detail-price">₹${product.price}</p>
+          <p class="product-detail-price">PKR${product.price}</p>
           <p class="product-detail-desc">${product.description}</p>
           ${product.size && product.size.length > 0 ? `
             <div class="option-group">

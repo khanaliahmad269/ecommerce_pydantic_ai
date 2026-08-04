@@ -2,10 +2,10 @@
 
 // Generate a random guest session email if one doesn't exist
 const getSessionId = () => {
-  let id = localStorage.getItem('luxe_session');
+  let id = localStorage.getItem('PakMart_session');
   if (!id) {
-    id = `guest_${Math.random().toString(36).substring(2, 9)}@luxe.com`;
-    localStorage.setItem('luxe_session', id);
+    id = `guest_${Math.random().toString(36).substring(2, 9)}@PakMart.com`;
+    localStorage.setItem('PakMart_session', id);
   }
   return id;
 };

@@ -60,7 +60,7 @@ jobs:
          docker run -d \
            --name luxe-app \
            --restart always \
-           -e MONGO_URI="${{ secrets.MONGO_URI }}" \
+           -e MONGO_URI="${{ secrets.MONGO_URI}}" \
            -e GROQ_API_KEY="${{ secrets.GROQ_API_KEY }}" \
            -e LOGFIRE_TOKEN="${{ secrets.LOGFIRE_TOKEN }}" \
            -p 8000:8000 \

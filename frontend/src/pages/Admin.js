@@ -76,7 +76,7 @@ export async function renderAdmin() {
             <img src="${p.image}" alt="${p.name}" />
             <h3>${p.name}</h3>
             <p>${p.description}</p>
-            <p class="price">₹${p.price}</p>
+            <p class="price">PKR${p.price}</p>
             <p class="meta">Category: ${p.category}</p>
             <p class="meta">Sizes: ${p.size?.join(', ') || 'N/A'}</p>
             <div class="product-actions">

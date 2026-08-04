@@ -58,14 +58,14 @@ export async function renderCart() {
                 <h3 style="font-weight: bold; font-size: 1.1rem; color: #111827;">${item.product_name}</h3>
                 <p style="color: #6B7280; font-size: 0.9rem;">Qty: ${item.quantity}</p>
               </div>
-              <div style="font-weight: bold; font-size: 1.1rem;">₹${item.price}</div>
+              <div style="font-weight: bold; font-size: 1.1rem;">PKR${item.price}</div>
             </div>
           `).join('')}
         </div>
         
         <div style="margin-top: 2rem; border-top: 2px dashed #E5E7EB; padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
           <h2 style="font-size: 1.5rem; font-weight: bold;">Total Due:</h2>
-          <span style="font-size: 1.5rem; font-weight: bold; color: #111827;">₹${total}</span>
+          <span style="font-size: 1.5rem; font-weight: bold; color: #111827;">PKR${total}</span>
         </div>
         
         <div style="margin-top: 2rem; display: flex; gap: 1rem;">
